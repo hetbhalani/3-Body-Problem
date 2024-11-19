@@ -99,7 +99,14 @@ def update(frame):
     z_curr_3 =  p3Z_sol[0:frame+1]
     
     
+    planet1_plt.set_data(x_curr_1,y_curr_1)
+    planet1_plt.set_3d_properties(z_curr_1)
     
+    planet2_plt.set_data(x_curr_2,y_curr_2)
+    planet2_plt.set_3d_properties(z_curr_2)
+    
+    planet3_plt.set_data(x_curr_3,y_curr_3)
+    planet3_plt.set_3d_properties(z_curr_3)
     
     
    
