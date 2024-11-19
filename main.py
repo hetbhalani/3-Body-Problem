@@ -90,7 +90,13 @@ def update(frame):
     y_curr_1 =  p1Y_sol[0:frame+1]
     z_curr_1 =  p1Z_sol[0:frame+1]
     
-  
+    x_curr_2 =  p2X_sol[0:frame+1]
+    y_curr_2 =  p2Y_sol[0:frame+1]
+    z_curr_2 =  p2Z_sol[0:frame+1]
+    
+    x_curr_3 =  p3X_sol[0:frame+1]
+    y_curr_3 =  p3Y_sol[0:frame+1]
+    z_curr_3 =  p3Z_sol[0:frame+1]
     
     
     
