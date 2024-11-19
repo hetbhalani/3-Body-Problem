@@ -38,7 +38,6 @@ def system_odes(t,sol, m1, m2, m3):
     
     return np.array([f1,f2,f3,df1_dt,df2_dt,df3_dt]).ravel()
 
-time_s , time_e = 0, 10
 t_points = np.linspace(time_s, time_e, 1001)
 
 solution = solve_ivp(fun=system_odes, t_span=(time_s,time_e), y0=initial_cond, t_eval=t_points, args=(m1, m2, m3))
@@ -59,6 +58,9 @@ p3Z_sol = solution.y[8]
 
 fig, ax = plt.subplots(subplot_kw={"projection":"3d"})
 
+
+
+
 # trajectory mate
 planet1_plt, = ax.plot(p1X_sol, p1Y_sol, p1Z_sol, 'green', label='Planet 1', linewidth=1)
 planet2_plt, = ax.plot(p2X_sol, p2Y_sol, p2Z_sol, 'red', label='Planet 2', linewidth=1)
@@ -74,12 +76,28 @@ ax.set_xlabel("x")
 ax.set_ylabel("y")
 ax.set_zlabel("z")
 plt.grid()
-plt.legend()
-plt.show()
+# plt.legend()
+# plt.show()
 
 # c/p code to watch batter animation
 
 #animate...
 
 def update(frame):
-    lower_lim = max(0,frame-300)
+    # lower_lim = max(0,frame-300)
+    
+    x_curr_1 =  p1X_sol[0:frame+1]
+    y_curr_1 =  p1Y_sol[0:frame+1]
+    z_curr_1 =  p1Z_sol[0:frame+1]
+    
+  
+    
+    
+    
+    
+    
+   
+    
+    return planet1_plt,planet2_plt,planet3_plt,planet1_dot,planet2_dot,planet3_dot
+
+plt.show()
