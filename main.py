@@ -38,6 +38,7 @@ def system_odes(t,sol, m1, m2, m3):
     
     return np.array([f1,f2,f3,df1_dt,df2_dt,df3_dt]).ravel()
 
+time_s , time_e = 0, 120
 t_points = np.linspace(time_s, time_e, 1001)
 
 solution = solve_ivp(fun=system_odes, t_span=(time_s,time_e), y0=initial_cond, t_eval=t_points, args=(m1, m2, m3))
