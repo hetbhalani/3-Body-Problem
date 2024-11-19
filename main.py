@@ -59,7 +59,13 @@ p3Z_sol = solution.y[8]
 fig, ax = plt.subplots(subplot_kw={"projection":"3d"})
 
 
+fig.patch.set_facecolor('black') 
+ax.set_facecolor('black') 
 
+ax.set_title("The 3-Body Problem", color='white', fontsize=14, pad=20)
+
+ax.grid(False)
+ax.set_axis_off()
 
 # trajectory mate
 planet1_plt, = ax.plot(p1X_sol, p1Y_sol, p1Z_sol, 'green', label='Planet 1', linewidth=1)
