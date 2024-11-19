@@ -99,5 +99,6 @@ def update(frame):
    
     
     return planet1_plt,planet2_plt,planet3_plt,planet1_dot,planet2_dot,planet3_dot
+animation = FuncAnimation(fig, update,frames=range(0,len(t_points),1), interval=3, blit=True)
 
 plt.show()
