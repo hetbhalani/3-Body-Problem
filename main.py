@@ -109,7 +109,14 @@ def update(frame):
     planet3_plt.set_3d_properties(z_curr_3)
     
     
-   
+    planet1_dot.set_data([x_curr_1[-1]],[y_curr_1[-1]])
+    planet1_dot.set_3d_properties([z_curr_1[-1]])
+    
+    planet2_dot.set_data([x_curr_2[-1]],[y_curr_2[-1]])
+    planet2_dot.set_3d_properties([z_curr_2[-1]])
+    
+    planet3_dot.set_data([x_curr_3[-1]],[y_curr_3[-1]])
+    planet3_dot.set_3d_properties([z_curr_3[-1]])
     
     return planet1_plt,planet2_plt,planet3_plt,planet1_dot,planet2_dot,planet3_dot
 animation = FuncAnimation(fig, update,frames=range(0,len(t_points),1), interval=3, blit=True)
