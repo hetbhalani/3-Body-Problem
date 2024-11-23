@@ -8,14 +8,14 @@ m2 = 1
 m3 = 1
 
 #positions
-initial_pos_1 = [1.0,0.0,1.0]
-initial_pos_2 = [1.1,1.1,0.1]
-initial_pos_3 = [0.0,1.0,1.0]
+inital_position_1 =  [1.0,  0.0,  1.0]
+inital_position_2 =  [1.0,  1.0,  0.0]
+inital_position_3 =  [0.0,   1.0, 1.0]
 
-#velocity
-initial_velocity_1 = [0.0,0.0,-1.0]
-initial_velocity_2 = [0.0,0.0,1.0]
-initial_velocity_3 = [0.0,0.0,-0.6]
+# Velocity
+inital_velocity_1 =  [0.0, 0.0, -1.0]
+inital_velocity_2 =  [0.0, 0.0, 1.0]
+inital_velocity_3 =  [0.0, 0.0, -0.6]
 
 initial_cond = np.array([
     initial_pos_1,initial_pos_2,initial_pos_3,
