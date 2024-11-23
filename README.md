@@ -3,7 +3,7 @@
 This Python project visualizes the fascinating dynamics of the **3-body problem**, where three celestial bodies interact through gravitational forces. Watch as the simulation brings to life the complex orbital dance of these bodies in stunning 3D animation! because i love Physics 😍
 
 ## 🎥 Demo
-- [Click Here to Watch the Video](https://www.linkedin.com/posts/het-bhalani_python-physics-animation-activity-7121571660498554880-nQ6K?utm_source=share&utm_medium=member_desktop) <br><br>
+- [Click Here to Watch the Video](https://www.canva.com/design/DAGXTjL6fIo/O6Lpq7rySUC9_DdD35Eg0w/watch?utm_content=DAGXTjL6fIo&utm_campaign=designshare&utm_medium=link&utm_source=editor) <br><br>
 <p align="center">
   <img src="image.png" alt="Description of the image" />
 </p>
