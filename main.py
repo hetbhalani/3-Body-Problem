@@ -8,14 +8,14 @@ m2 = 1
 m3 = 1
 
 #positions
-inital_position_1 =  [1.0,  0.0,  1.0]
-inital_position_2 =  [1.0,  1.0,  0.0]
-inital_position_3 =  [0.0,   1.0, 1.0]
+initial_pos_1 =  [1.0,  0.0,  1.0]
+initial_pos_2 =  [1.0,  1.0,  0.0]
+initial_pos_3 =  [0.0,   1.0, 1.0]
 
 # Velocity
-inital_velocity_1 =  [0.0, 0.0, -1.0]
-inital_velocity_2 =  [0.0, 0.0, 1.0]
-inital_velocity_3 =  [0.0, 0.0, -0.6]
+initial_velocity_1 =  [0.1, 0.0, -1.0]
+initial_velocity_2 =  [0.0, 0.0, 1.0]
+initial_velocity_3 =  [0.0, 0.0, -0.6]
 
 initial_cond = np.array([
     initial_pos_1,initial_pos_2,initial_pos_3,
@@ -38,7 +38,7 @@ def system_odes(t,sol, m1, m2, m3):
     
     return np.array([f1,f2,f3,df1_dt,df2_dt,df3_dt]).ravel()
 
-time_s , time_e = 0, 120
+time_s , time_e = 0, 60
 t_points = np.linspace(time_s, time_e, 1001)
 
 solution = solve_ivp(fun=system_odes, t_span=(time_s,time_e), y0=initial_cond, t_eval=t_points, args=(m1, m2, m3))
